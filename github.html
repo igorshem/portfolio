@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/github.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>GitHub - igorshem/Install_Laravel</title>
+</head>
+<body class="text-sm">
+	<header class="bg-black text-white flex w-full py-2.5 items-stretch border border-gray-800">
+		<div class="grow-0 shrink-0 h-full px-2">
+			<a class="block h-full py-0" href="https://study-tailwind.loc/github.html">
+				<svg height="45" width="32" viewBox="0 0 16 16" class="block align-bottom fill-current" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+			</a>
+		</div>
+		<nav class="grow-0 shrink-0 h-full">
+			<ul class="h-full topmenu flex list-none">
+				<li class="submenu-link relative pl-3 hover:text-gray-300 hover:cursor-pointer h-full leading-10">
+					<span>Product</span>
+					<svg height="36" width="16" viewBox="0 0 16 16" class="inline-block align-bottom fill-white HeaderMenu-icon ml-1" opacity="0.5" aria-hidden="true" version="1.1" data-view-component="true"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path></svg>
+					<div class="flex p-0 pt-6 submenu border bg-gray-100 rounded-lg w-125 opacity-0 m-0 ease-in-out duration-100 absolute left-0z-10 hover:cursor-default">
+						<div class="w-3/5 pr-3 border-r border-gray-300">
+							<ul class="w-full top-full list-none bg-transparent">
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top" aria-hidden="true" version="1.1" data-view-component="true"><path d="M1 3a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H7v4.063C7 16.355 7.644 17 8.438 17H12.5v-2.5a2 2 0 0 1 2-2H21a2 2 0 0 1 2 2V21a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-2.5H8.437A2.939 2.939 0 0 1 5.5 15.562V11.5H3a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v6.5a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5ZM14.5 14a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5H21a.5.5 0 0 0 .5-.5v-6.5a.5.5 0 0 0-.5-.5Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Actions</span>
+											<span class="block leading-2 text-xs font-normal">Automate any workflow</span>
+										</div>
+									</a>
+								</li>
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top"  aria-hidden="true" version="1.1" data-view-component="true"><path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Packages</span>
+											<span class="block leading-2 text-xs font-normal">Host and manage packages</span>
+										</div>
+									</a>
+								</li>
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top" aria-hidden="true" version="1.1" data-view-component="true"><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Security</span>
+											<span class="block leading-2 text-xs font-normal">Find and fix vulnerabilities</span>
+										</div>
+									</a>
+								</li>
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top"  aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.5 3.75C3.5 2.784 4.284 2 5.25 2h13.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 18.75 13H5.25a1.75 1.75 0 0 1-1.75-1.75Zm-2 12c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v4a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75ZM5.25 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h13.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Zm-2 12a.25.25 0 0 0-.25.25v4c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25v-4a.25.25 0 0 0-.25-.25Z"></path><path d="M10 17.75a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Codespaces</span>
+											<span class="block leading-2 text-xs font-normal">Instant dev environments</span>
+										</div>
+									</a>
+								</li>
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top" aria-hidden="true" version="1.1" data-view-component="true"><path d="M9.75 14a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 .75-.75Zm4.5 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 .75-.75Z"></path><path d="M12 2c2.214 0 4.248.657 5.747 1.756.136.099.268.204.397.312.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086l.633 1.478.043.022A4.75 4.75 0 0 1 24 15.222v1.028c0 .529-.309.987-.565 1.293-.28.336-.636.653-.966.918a13.84 13.84 0 0 1-1.299.911l-.024.015-.006.004-.039.025c-.223.135-.45.264-.68.386-.46.245-1.122.571-1.941.895C16.845 21.344 14.561 22 12 22c-2.561 0-4.845-.656-6.479-1.303a19.046 19.046 0 0 1-1.942-.894 14.081 14.081 0 0 1-.535-.3l-.144-.087-.04-.025-.006-.004-.024-.015a13.16 13.16 0 0 1-1.299-.911 6.913 6.913 0 0 1-.967-.918C.31 17.237 0 16.779 0 16.25v-1.028a4.75 4.75 0 0 1 2.626-4.248l.043-.022.633-1.478a10.195 10.195 0 0 1-.052-1.086c0-1.331.282-2.498 1.132-3.368.397-.406.89-.717 1.474-.952.129-.108.261-.213.397-.312C7.752 2.657 9.786 2 12 2Zm-8 9.654v6.669a17.59 17.59 0 0 0 2.073.98C7.595 19.906 9.686 20.5 12 20.5c2.314 0 4.405-.594 5.927-1.197a17.59 17.59 0 0 0 2.073-.98v-6.669l-.038-.09c-.046.061-.095.12-.145.177-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.544-3.508-1.492a4.323 4.323 0 0 1-.355-.508h-.344a4.323 4.323 0 0 1-.355.508C10.704 12.456 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a3.026 3.026 0 0 1-.145-.177Zm6.309-1.092c.445-.547.708-1.334.851-2.301.057-.357.087-.718.09-1.079v-.031c-.001-.762-.166-1.26-.43-1.568l-.008-.01c-.341-.391-1.046-.689-2.533-.529-1.505.163-2.347.537-2.824 1.024-.462.473-.705 1.18-.705 2.32 0 .605.044 1.087.135 1.472.092.384.231.672.423.89.365.413 1.084.75 2.657.75.91 0 1.527-.223 1.964-.564.14-.11.268-.235.38-.374Zm2.504-2.497c.136 1.057.403 1.913.878 2.497.442.545 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.151.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.318-.862-2.824-1.025-1.487-.161-2.192.139-2.533.529-.268.308-.437.808-.438 1.578v.02c.002.299.023.598.063.894Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Capilot</span>
+											<span class="block leading-2 text-xs font-normal">Write better code with AI</span>
+										</div>
+									</a>
+								</li>
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top" aria-hidden="true" version="1.1" data-view-component="true"><path d="M10.3 6.74a.75.75 0 0 1-.04 1.06l-2.908 2.7 2.908 2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z"></path><path d="M1.5 4.25c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v12.5a1.75 1.75 0 0 1-1.75 1.75h-9.69l-3.573 3.573A1.458 1.458 0 0 1 5 21.043V18.5H3.25a1.75 1.75 0 0 1-1.75-1.75ZM3.25 4a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 .75.75v3.19l3.72-3.72a.749.749 0 0 1 .53-.22h10a.25.25 0 0 0 .25-.25V4.25a.25.25 0 0 0-.25-.25Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Code review</span>
+											<span class="block leading-2 text-xs font-normal">Manage code changes</span>
+										</div>
+									</a>
+								</li>
+								<li class="pl-4 pt-2 w-full relative bg-transparent hover:cursor-pointer">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<div class="inline-block h-full px-2">
+											<svg height="24" width="24" viewBox="0 0 24 24" class="inline-block align-top" aria-hidden="true" version="1.1" data-view-component="true"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"></path></svg>
+										</div>
+										<div class="inline-block">
+											<span class="block leading-4 font-semibold">Issues</span>
+											<span class="block leading-2 text-xs font-normal">Plan and track work</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="w-2/5">
+							<span class="pl-4 pt-2 text-black block leading-4 font-semibold">Explore</span>
+							<ul class="w-full top-full list-none bg-transparent">
+								<li class="pl-4 pt-4 w-full relative bg-transparent">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="block leading-2 text-xs font-light">All features</span>
+									</a>
+								</li>
+								<li class="pl-4 w-full relative bg-transparent">
+									<a class="HeaderMenu-after ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="inline-block leading-2 text-xs font-light">Documentation</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="HeaderMenu-after-icon hidden leading-2 text-xs font-light" aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg>
+									</a>
+								</li>
+								<li class="pl-4 -mt-2 w-full relative bg-transparent">
+									<a class="HeaderMenu-after ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="inline-block leading-2 text-xs font-light">GitHub Skills</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="HeaderMenu-after-icon hidden leading-2 text-xs font-light" aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg>
+									</a>
+								</li>
+								<li class="pl-4 -mt-2 w-full relative bg-transparent">
+									<a class="HeaderMenu-after ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="inline-block leading-2 text-xs font-light">Blog</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="HeaderMenu-after-icon hidden leading-2 text-xs font-light" aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="submenu-link relative pl-3 hover:text-gray-300 hover:cursor-pointer h-full leading-10">
+					<span>Solutions</span>
+					<svg height="36" width="16" viewBox="0 0 16 16" class="inline-block align-bottom fill-white HeaderMenu-icon ml-1" opacity="0.5" aria-hidden="true" version="1.1" data-view-component="true"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path></svg>
+					<div class="p-0 pt-6 submenu text-black border bg-gray-100 rounded-lg w-76 opacity-0 m-0 ease-in-out duration-100 absolute left-0z-10 hover:cursor-default">
+						<span class="pl-4 pt-2 block leading-4 font-semibold">For</span>
+							<ul class="pb-2 w-full top-full list-none bg-transparent">
+								<li class="pl-4 pt-4 w-full relative bg-transparent">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="block leading-2 text-xs font-light">Enterprise</span>
+									</a>
+								</li>
+								<li class="pl-4 pt-4 w-full relative bg-transparent">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="block leading-2 text-xs font-light">Teams</span>
+									</a>
+								</li>
+								<li class="pl-4 pt-4 w-full relative bg-transparent">
+									<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="block leading-2 text-xs font-light">Startups</span>
+									</a>
+								</li>
+								<li class="pl-4 w-full relative bg-transparent">
+									<a class="HeaderMenu-after ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+										<span class="inline-block leading-2 text-xs font-light">Education</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="HeaderMenu-after-icon hidden leading-2 text-xs font-light" aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg>
+									</a>
+								</li>
+							</ul>
+						<hr class="pb-2 color-gray-300 mx-4">
+						<span class="pl-4 pt-2 block leading-4 font-semibold">By Solution</span>
+						<ul class="pb-2 w-full top-full list-none bg-transparent">
+							<li class="pl-4 pt-4 w-full relative bg-transparent">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="block leading-2 text-xs font-light">CI/CD & Automation</span>
+								</a>
+							</li>
+							<li class="pl-4 w-full relative bg-transparent">
+								<a class="HeaderMenu-after ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="inline-block leading-2 text-xs font-light">DevOps</span>
+									<svg width="16" height="16" viewBox="0 0 16 16" class="HeaderMenu-after-icon hidden leading-2 text-xs font-light" aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg>
+								</a>
+							</li>
+							<li class="pl-4 -mt-2 w-full relative bg-transparent">
+								<a class="HeaderMenu-after ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="inline-block leading-2 text-xs font-light">DevSecOps</span>
+									<svg width="16" height="16" viewBox="0 0 16 16" class="HeaderMenu-after-icon hidden leading-2 text-xs font-light" aria-hidden="true" version="1.1" data-view-component="true"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg>
+								</a>
+							</li>
+						</ul>
+						<hr class="pb-2 color-gray-300 mx-4">
+						<span class="pl-4 pt-2 block leading-4 font-semibold">Case Studies</span>
+						<ul class="pb-2 w-full top-full list-none bg-transparent">
+							<li class="pl-4 pt-4 w-full relative bg-transparent">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="block leading-2 text-xs font-light">CI/CD & Automation</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="pl-3 hover:text-gray-300 hover:cursor-pointer h-full leading-10">
+					<span>Open Source</span>
+					<svg height="36" width="16" viewBox="0 0 16 16" class="inline-block align-bottom fill-current HeaderMenu-icon ml-1" opacity="0.5" aria-hidden="true" version="1.1" data-view-component="true"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path></svg>
+					<div class="p-0 pt-6 submenu text-black border bg-gray-100 rounded-lg w-76 opacity-0 m-0 ease-in-out duration-100 absolute left-0z-10 hover:cursor-default">
+						<ul class="pb-2 w-full top-full list-none bg-transparent">
+							<li class="pl-4 py-2 w-full relative bg-transparent hover:cursor-pointer">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<div class="inline-block w-full">
+										<span class="block leading-4 font-semibold">GitHub Sponsors</span>
+										<span class="block leading-2 text-xs font-normal">Fund open source developers</span>
+									</div>
+								</a>
+							</li>
+							<hr class="pb-2 color-gray-300 mx-4">
+							<li class="pl-4 py-2 w-full relative bg-transparent hover:cursor-pointer">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<div class="inline-block w-full">
+										<span class="block leading-4 font-semibold">The ReadME Project</span>
+										<span class="block leading-2 text-xs font-normal">GitHub community articles</span>
+									</div>
+								</a>
+							</li>
+							<hr class="pb-2 color-gray-300 mx-4">
+							<span class="pl-4 pt-2 block leading-4 font-semibold">Repositories</span>
+							<li class="pl-4 pt-4 w-full relative bg-transparent">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="block leading-2 text-xs font-light">Topics</span>
+								</a>
+							</li>
+							<li class="pl-4 pt-4 w-full relative bg-transparent">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="block leading-2 text-xs font-light">Torending</span>
+								</a>
+							</li>
+							<li class="pl-4 pt-4 w-full relative bg-transparent">
+								<a class="ease-in-out duration-300 block no-underline text-black hover:fill-sky-500 hover:text-sky-500" href="#">
+									<span class="block leading-2 text-xs font-light">Collections</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="pl-3 hover:text-gray-300 hover:cursor-pointer h-full leading-10">
+					<a href="#">
+						<span>Pricing</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="w-full flex justify-end py-1.5 pr-3">
+			<div class="search-box shrink-1 w-60 pr-2 bg-transparent border border-gray-500 rounded-md">
+				<form class="rounded-md flex items-stretch w-full h-full bg-transparent">
+					<input id="inp-search" class="focus:bg-white rounded-md px-2 w-full bg-transparent text-xs outline-none h-full" type="text" placeholder="Search">
+					<svg height="22" width="22" class="svg-search mr-1 mt-1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
+				</form>
+			</div>
+			<div class="shrink-0 pl-2 pr-3 py-1 hover:cursor-pointer hover:text-gray-300">Sign in</div>
+			<div class="shrink-0 px-2 py-1 hover:cursor-pointer hover:border-gray-300 hover:text-gray-300 border border-gray-100 rounded-lg">Sign up</div>
+		</div>
+	</header>
+
+	<div class="px-5 mt-3 flex items-stretch h-8 w-full">
+		<div class="grow">
+			<svg width="16" height="16" viewBox="0 0 16 16" class="align-super inline-block mr-2" aria-hidden="true" version="1.1" data-view-component="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>
+			<a class="inline-block text-lg text-blue-600 hover:underline" href="#">igorshem</a>
+			<span class="inline-block text-lg">/</span>
+			<a class="pr-1 inline-block text-lg font-bold text-blue-600 hover:underline" href="#">Install_Laravel</a>
+			<span class="px-1 align-super inline-block text-xs rounded border border-gray-300">Public</span>
+		</div>
+		<div class="px-1 text-xs flex justify-end w-96 grow-0 shrink-0">
+			<div class="mx-1 px-2 tiptextbtn relative hover:bg-gray-200 flex items-stretch h-6 border border-gray-500 rounded">
+				<a class="flex py-0.5" href="#">
+					<svg width="16" height="20" viewBox="0 0 18 16" class="mr-2" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path></svg>
+					<span class="pr-2">Notifications</span>
+				</a>
+				<span class="tiptext absolute top-[120%] right-[-80%] p-1.5 text-xs whitespace-nowrap bg-black text-white rounded">You must be signed in to change notification settings</span>
+			</div>
+			<div class="mx-1 px-2 relative hover:bg-gray-200 flex items-stretch h-6 border border-gray-500 rounded">
+				<a class="flex py-0.5" href="#">
+					<svg width="16" height="20" viewBox="0 0 18 16" class="mr-2" aria-hidden="true" version="1.1" data-view-component="true"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>
+					<span class="pr-2">Fork</span>
+					<span class="px-1 rounded-full bg-gray-300">0</span>
+				</a>
+			</div>
+			<div class="flex mx-2 tiptextbtn1 relative flex items-stretch h-6 border border-gray-500 rounded">
+				<a class="flex pl-2.5 py-0.5 pr-1.5 hover:bg-gray-200" href="#">
+					<svg width="16" height="20" viewBox="0 0 18 16" class="mr-2" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>
+					<span class="pr-2">Star</span>
+					<span class="px-1 rounded-full bg-gray-300">0</span>
+				</a>
+				<span class="tiptext absolute top-[120%] right-[-20%] p-1.5 text-xs whitespace-nowrap bg-black text-white rounded">You must be signed in to add this repository to a list</span>
+				<a class="border-l border-gray-500 px-1 hover:bg-gray-200" href="#">
+					<div class="h-full">
+						<svg width="16" height="20" viewBox="0 0 16 16" class="pl-0.5" aria-hidden="true" version="1.1" data-view-component="true"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<main class="w-full text-xs">
+		<nav class="mx-5 w-full">
+			<ul class="flex items-stretch justify-start">
+				<li class="pb-1.5 border-b-2 border-red-400">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+						<span class="pl-2">Code</span>
+					</a>
+				</li>
+				<li class="pb-1.5">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg>
+						<span class="pl-2">Issues</span>
+					</a>
+				</li>
+				<li class="pb-1.5">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path></svg>
+						<span class="pl-2">Pull requests</span>
+					</a>
+				</li>
+				<li class="pb-1.5">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path></svg>
+						<span class="pl-2">Actions</span>
+					</a>
+				</li>
+				<li class="pb-1.5">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path></svg>
+						<span class="pl-2">Projects</span>
+					</a>
+				</li>
+				<li class="pb-1.5">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>
+						<span class="pl-2">Security</span>
+					</a>
+				</li>
+				<li class="pb-1.5">
+					<a class="px-1 mr-2 py-1 hover:bg-gray-300 rounded flex font-semibold" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg>
+						<span class="pl-2">Insights</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<hr class="color-gray-500 pb-6">
+		<div class="px-5 flex">
+			<div class="flex w-5/12">
+				<div class="w-min tiptextbtn2 relative flex items-stretch h-6 border border-gray-500 rounded">
+					<a class="flex pl-2.5 py-0.5 pr-1.5 hover:bg-gray-200" href="#">
+						<svg width="16" height="16" viewBox="0 0 16 16" class="mr-2" text="gray" aria-hidden="true" version="1.1" data-view-component="true"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg>
+						<span class="pr-2">main</span>
+						<svg width="16" height="20" viewBox="0 0 16 16" class="pl-0.5" aria-hidden="true" version="1.1" data-view-component="true"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+					</a>
+					<span class="tiptext absolute top-[125%] left-[-15%] p-1.5 text-xs whitespace-nowrap bg-black text-white rounded">Switch branches or tags</span>
+				</div>
+				<ul class="pl-2 flex items-stretch justify-start">
+					<li class="pb-1.5">
+						<a class="px-1 mr-2 py-1 hover:text-sky-500 hover:fill-sky-500 rounded flex font-semibold" href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" text="gray" aria-hidden="true" version="1.1" data-view-component="true"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg>
+							<span class="px-1 font-bold">1</span>
+							<span class="pl-0.5 font-normal">branch</span>
+						</a>
+					</li>
+					<li class="pb-1.5">
+						<a class="px-1 mr-2 py-1 hover:text-sky-500 hover:fill-sky-500 rounded flex font-semibold" href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" text="gray" aria-hidden="true" version="1.1" data-view-component="true"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path></svg>
+							<span class="px-1 font-bold">0</span>
+							<span class="pl-0.5 font-normal">tags</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="flex justify-end w-3/12">
+				<div class="flex w-min relative items-stretch h-6 border border-gray-500 rounded">
+					<a class="flex pl-2.5 py-0.5 pr-1.5 hover:bg-gray-200 whitespace-nowrap" href="#">
+						<span class="pr-2">Go to file</span>
+					</a>
+				</div>
+				<div class="ml-2 flex bg-emerald-500 w-min relative items-stretch h-6 border border-gray-500 rounded">
+					<a class="text-white flex pl-2.5 py-0.5 pr-1.5 hover:bg-emerald-600 whitespace-nowrap" href="#">
+						<span class="pr-2">Code</span>
+						<svg width="16" height="20" viewBox="0 0 16 16" class="pl-0.5 fill-white" aria-hidden="true" version="1.1" data-view-component="true"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+					</a>
+				</div>
+			</div>
+
+			<div class="px-3 w-4/12">
+				<span class="pl-1 py-1 block leading-4 text-sm font-semibold">About</span>
+			</div>
+		</div>
+
+		<div class="pt-2 px-5 flex text-xs">
+			<article class="w-8/12"><!--Left-->
+				<div class="pt-3 pb-0.5 px-3 flex w-full border border-gray-300 rounded-t-md"><!--First Row-->
+					<div class="mr-2 grow-0 w-6"><!--Row-N-->
+						<a class="mr-2" href="#">
+							<img width="24" height="24" src="./img/126855671.png" alt="@igorshem">
+						</a>
+					</div><!--Row-N-->
+					<div class="flex items-stretch grow-0 min-w-[10rem]"><!--Row-Left-->
+						<a class="mr-2 leading-6 font-semibold hover:underline" href="#">
+							igorshem
+						</a>
+						<a class="mr-2 leading-6 hover:underline hover:text-blue-600" href="#">
+							Chapter 5 Edit
+						</a>
+					</div><!--Row-Left-->
+					<div class="grow"></div><!--Row-Center-->
+					<div class="flex items-stretch justify-end grow-0 min-w-[12rem]"><!--Row-Right-->
+						<a class="ml-2 text-xxs leading-7 text-gray-600 hover:underline hover:text-blue-600" href="#">
+							b7e2f8c
+						</a>
+						<a class="ml-2 leading-6 text-gray-600 hover:underline hover:text-blue-600" href="#">
+							last week
+						</a>
+						<a class="flex ml-2 leading-6 text-gray-600 hover:text-blue-600 hover:fill-blue-600" href="#">
+							<svg width="16" height="24" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path></svg>
+							<span class="ml-1">35 commits</span>
+						</a>
+					</div><!--Row-Right-->
+				</div><!--First Row-->
+				<div class="py-2 px-3 flex items-stretch w-full text-gray-600 border-r border-l border-gray-300"><!--Row Center-->
+					<div class="grow-0 w-6 py-1 px-1"><!--Row-N-->
+						<svg width="16" height="16" viewBox="0 0 16 16" class="fill-sky-500" aria-label="Directory" aria-hidden="true" version="1.1" data-view-component="true"><path d="M1.75 1A1.75 1.75 0 0 0 0 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0 0 16 13.25v-8.5A1.75 1.75 0 0 0 14.25 3H7.5a.25.25 0 0 1-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75Z"></path></svg>
+					</div><!--Row-N-->
+					<div class="grow-0 min-w-[10rem]"><!--Row-Left-->
+						<a class="ml-2 leading-6 text-gray-600 hover:underline hover:text-blue-600" href="#">
+							pages
+						</a>
+					</div><!--Row-Left-->
+					<div class="grow"><!--Row-Center-->
+						<a class="ml-2 leading-6 text-gray-600 hover:underline hover:text-blue-600" href="#">
+							Chapter 5 Edit
+						</a>
+					</div><!--Row-Center-->
+					<div class="flex items-stretch justify-end grow-0 min-w-[12rem]"><!--Row-Right-->
+						<span class="ml-1 leading-5">last week</span>
+					</div><!--Row-Right-->
+				</div><!--Row Center-->
+				<div class="py-2 px-3 flex w-full text-gray-600 border border-gray-300 rounded-b-md"><!--Row Bottom-->
+					<div class="grow-0 w-6 py-1 px-1"><!--Row-N-->
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-label="File" aria-hidden="true" version="1.1" data-view-component="true"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path></svg>
+					</div><!--Row-N-->
+					<div class="flex items-stretch grow-0 min-w-[10rem]"><!--Row-Left-->
+						<a class="ml-2 leading-6 text-gray-600 hover:underline hover:text-blue-600" href="#">
+							README.md
+						</a>
+					</div><!--Row-Left-->
+					<div class="grow"><!--Row-Center-->
+						<a class="ml-2 leading-6 text-gray-600 hover:underline hover:text-blue-600" href="#">
+							Edit chapter 3
+						</a>
+					</div><!--Row-Center-->
+					<div class="flex items-stretch justify-end grow-0 min-w-[12rem]"><!--Row-Right-->
+						<span class="ml-1 leading-5">2 weeks ago</span>
+					</div><!--Row-Right-->
+				</div><!--Row Bottom-->
+
+				<div class="mt-5 py-2 px-3 flex w-full border border-gray-300 rounded-t-md"><!--Fourth Row-->
+					<div class="grow-0 w-6 py-1 px-1 hover:bg-gray-200"><!--Row-N-->
+						<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" version="1.1" data-view-component="true"><path d="M5.75 2.5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>
+					</div><!--Row-N-->
+					<div class="flex items-stretch grow-0 min-w-[10rem]"><!--Row-Left-->
+						<a class="ml-2 leading-6 font-semibold text-gray-600 hover:underline hover:text-blue-600" href="#">
+							README.md
+						</a>
+					</div><!--Row-Left-->
+					<div class="grow"><!--Row-Center-->
+					</div><!--Row-Center-->
+					<div class="flex items-stretch justify-end grow-0 min-w-[12rem]"><!--Row-Right-->
+					</div><!--Row-Right-->
+				</div><!--Fourth Row-->
+
+				<div class="pb-0.5 px-3 flex w-full border-l border-r border-gray-300"><!--Fifth Row-->
+					<div class="pt-4 mx-5 "><!--Row-united Head-->
+						<span class="tiptextbtn3 text-3xl leading-8 font-semibold text-gray-800">
+							Настройка и установка Laravel под Windows 7
+							<a class="tiptext absolute bottom-[-1%] left-[3%] p-1.5 text-xs whitespace-nowrap bg-transparent text-black rounded" href="#">
+								<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+							</a>
+						</span>
+					</div><!--Row-united Head-->
+				</div><!--Fifth Row-->
+				<div class="pb-0.5 px-3 flex w-full border-l border-r border-b border-gray-300 rounded-b-md"><!--Fifth Row-->
+					<div class=" mx-5 mb-4"><!--Row-united Body-->
+						<hr class="color-gray-500 my-3">
+						<span class="text-black text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, blanditiis harum labore non repudiandae saepe tempore voluptas. Aspernatur ipsum tenetur voluptates! Amet deleniti eaque hic quasi qui sapiente, veniam. Quos?</span><span>Beatae impedit necessitatibus recusandae rerum ut veritatis. Assumenda consectetur cum cumque dolores eveniet excepturi hic illo incidunt ipsum repudiandae sapiente, sed vel voluptas. Amet cum dignissimos id ipsum libero veniam.</span><span>Adipisci dolorem hic laboriosam possimus quo. Animi cum quia quos recusandae, repudiandae suscipit veniam voluptas voluptates? Aliquam blanditiis consequatur est expedita fuga illo in maiores necessitatibus nisi quam? Cupiditate, porro.</span><span>Ad autem beatae consequatur cumque delectus dolor ducimus, eum expedita fuga hic inventore ipsam, labore laboriosam magnam, magni non numquam odio perspiciatis provident quam qui ratione saepe ut? Odio, veritatis?</span><span>Animi, optio quidem. Ex incidunt nulla odit sapiente soluta. Ad, autem minus officia pariatur possimus vitae? Assumenda autem, cumque, delectus dolores enim fugit ipsa, ipsam molestiae omnis possimus vel vero.
+						</span>
+					</div><!--Row-united Body-->
+				</div><!--Fifth Row-->
+			</article><!--Left-->
+			<aside class="px-3 w-4/12"><!--Right-->
+				<span class="text-sm italic text-gray-600">
+					No description, website, or topics provided.</span>
+				<ul class="pt-2 pb-4 leading-6 text-gray-600 fill-gray-600">
+					<li class="pb-0.5">
+						<a class="px-1 mr-2 py-0.5 hover:fill-sky-500 hover:text-sky-500 rounded flex font-normal" href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" class="mr-2 my-1" aria-hidden="true" version="1.1" data-view-component="true"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg>
+							<span class="pl-2">Readme</span>
+						</a>
+					</li>
+					<li class="pb-0.5">
+						<a class="px-1 mr-2 py-0.5 hover:fill-sky-500 hover:text-sky-500 rounded flex font-normal" href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" class="mr-2 my-1" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>
+							<span class="pl-2">0 stars</span>
+						</a>
+					</li>
+					<li class="pb-0.5">
+						<a class="px-1 mr-2 py-0.5 hover:fill-sky-500 hover:text-sky-500 rounded flex font-normal" href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" class="mr-2 my-1" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path></svg>
+							<span class="pl-2">1 watching</span>
+						</a>
+					</li>
+					<li class="pb-0.5">
+						<a class="px-1 mr-2 py-0.5 hover:fill-sky-500 hover:text-sky-500 rounded flex font-normal" href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" class="mr-2 my-1" aria-hidden="true" version="1.1" data-view-component="true"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>
+							<span class="pl-2">0 forks</span>
+						</a>
+					</li>
+				</ul>
+				<hr class="color-gray-500 py-3">
+				<a class="pl-1 py-0.5 block leading-4 text-sm font-semibold hover:text-sky-500" href="#">Releases</a>
+				<span class="pl-1 py-4 block text-xs">No releases published</span>
+				<hr class="color-gray-500 py-3">
+				<a class="pl-1 py-0.5 block leading-4 text-sm font-semibold hover:text-sky-500" href="#">Packages</a>
+				<span class="pl-1 py-4 block text-xs">No packages published</span>
+			</aside><!--Right-->
+		</div>
+	</main>
+
+	<footer class="w-full px-2 pt-8 text-xs text-blue-500">
+		<hr class="color-gray-500 pt-4">
+		<div class="flex items-stretch w-full my-8">
+			<div class="flex items-stretch pr-4">
+				<a class="fill-gray-500 pr-2 hover:fill-gray-700" href="#">
+					<svg width="24" height="24" viewBox="0 0 16 16" class="" aria-hidden="true" version="1.1" data-view-component="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+				</a>
+				<span class="py-0.5 text-gray-500">© 2023 GitHub, Inc.</span>
+			</div>
+			<ul class="flex items-stretch">
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Terms</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Privacy</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Security</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Status</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Docs</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Contact GitHub</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Pricing</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">API</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Training</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">Blog</a>
+				</li>
+				<li class="px-2 py-0.5">
+					<a class="hover:underline" href="#">About</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<Table>
+		<tr>
+			<td>Summary</td>
+			<td>17 hours</td>
+		</tr>
+	</Table>
+
+</body>
+</html>

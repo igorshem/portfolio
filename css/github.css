@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    line-height: 1.5;
+}
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.submenu-link:after {
+    color: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-right: 0.5em;
+    font-size: 0.75em;
+}
+.submenu {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+}
+.submenu li:last-child a {
+    border-bottom: none;
+}
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+.h-18 {
+    height: 4.5rem; /* 40px */
+}
+.w-76 {
+    width: 19rem;/* 304px */
+}
+.w-125 {
+    width: 31.25rem;/* 500px */
+}
+.text-xxs	{
+    font-size: 0.5rem; /* 8px */
+    line-height: 0.75rem; /* 12px */
+}
+.outline-none {
+    outline: none;
+}
+.tiptextbtn:hover .tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tiptextbtn .tiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tiptextbtn1:hover .tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tiptextbtn1 .tiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 80%;
+    right: 25%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tiptext {
+    visibility: hidden;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tiptextbtn2:hover .tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tiptextbtn2 .tiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 85%;
+    left: 45%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tiptextbtn3:hover .tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.HeaderMenu-icon {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 500ms;
+    transition-property: opacity,transform;
+}
+.HeaderMenu-after:hover > .HeaderMenu-after-icon {
+    display: inline-block;
+}
+.search-box:focus-within {
+    background: white;
+}
+.search-box:focus-within .svg-search {
+    display: none;
+}
