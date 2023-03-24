@@ -1,8 +1,9 @@
 # Образцы работ
 ## Вёрстка:
 ### GitHub-page
-* [html](github.html)
-* [css](./css/github.css)
+* html - файл [git-link](github.html)
+* css - файл [git-link](./css/github.css)
+* [отобразить в браузере](http://igorshem.ho.ua/github.html)
 
 Использованы технологии:
 * HTML5, CSS3
